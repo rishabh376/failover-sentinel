@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: failover-sentinel
+spec:
+  selector:
+    app: failover-sentinel
+  ports:
+  - port: 80
+    targetPort: 8080
